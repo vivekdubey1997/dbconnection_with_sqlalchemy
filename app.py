@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 app=Flask(__name__)
 
-engine=create_engine("postgres://nfgstbdk:orKxnebERCNueGzxrN2pQ6PPnU-8SxST@tiny.db.elephantsql.com/nfgstbdk",echo=False)
+engine=create_engine(echo=False)
 
 session = sessionmaker(bind=engine)
 
